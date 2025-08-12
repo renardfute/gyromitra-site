@@ -43,7 +43,7 @@ export async function POST(req: Request) {
       </div>
     `;
 
-    await resend.emails.send({ from, to, replyTo: email, subject, html });
+    await resend.emails.send({ from, to, reply_to: email, subject, html });
     return NextResponse.json({ ok: true });
   } catch (err) {
     console.error(err);
