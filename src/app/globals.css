@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* System font stack (includes San Francisco on Apple devices) */
+:root { --brand:#0f172a; --muted:#64748b; --line:#e5e7eb; }
+html,body{height:100%}
+body{
+  @apply bg-white text-slate-900 antialiased;
+  font-feature-settings: "rlig" 1, "calt" 1;
+}
+
+/* Layout helpers */
+.container{ @apply mx-auto max-w-6xl px-4 md:px-6; }
+.section{ @apply py-16 md:py-24; }
+
+/* Apple-ish UI atoms */
+.kicker{ @apply text-xs font-semibold uppercase tracking-widest text-slate-500; }
+.h1{ @apply text-4xl md:text-6xl font-semibold leading-tight tracking-tight; }
+.h2{ @apply text-2xl md:text-4xl font-semibold tracking-tight; }
+
+/* Buttons */
+.btn{ @apply inline-flex items-center gap-2 rounded-full px-5 py-3 text-sm font-medium transition; }
+.btn-primary{ @apply bg-black text-white hover:bg-neutral-800; }
+.btn-ghost{ @apply border border-neutral-200 hover:bg-neutral-50; }
+
+/* Cards */
+.card{ @apply rounded-2xl border border-neutral-200 bg-white p-6 shadow-none; }
+
+/* Forms */
+label{ @apply text-sm text-slate-700; }
+input, textarea{
+  @apply bg-white border border-neutral-300 rounded-xl px-4 py-3 outline-none
+  focus:border-black focus:ring-0;
+}
+small{ @apply text-slate-500; }
+
+/* Header & footer line */
+.header-line, .footer-line { @apply border-b border-neutral-200; }
