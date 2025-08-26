@@ -10,7 +10,7 @@ export default function Navbar() {
       <div className="container flex items-center justify-between py-2">
         <Link href="/" className="flex items-center">
           <Image
-            src="/logo-cropped.png"
+            src="/logo-white-bg.png"
             alt="Gyromitra Inc."
             width={504}
             height={154}
