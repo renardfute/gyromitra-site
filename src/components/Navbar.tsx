@@ -7,15 +7,16 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
   return (
     <header className="sticky top-0 z-50 bg-white/90 backdrop-blur header-line">
-      <div className="container flex items-center justify-between py-4">
+      <div className="container flex items-center justify-between py-3">
         <Link href="/" className="flex items-center">
           <Image
             src="/logo.png"
             alt="Gyromitra Inc."
-            width={120}
-            height={40}
-            className="h-8 w-auto"
+            width={360}
+            height={120}
+            className="h-12 w-auto object-contain"
             priority
+            style={{ objectPosition: 'center' }}
           />
         </Link>
         <nav className="hidden gap-8 text-sm text-slate-700 md:flex">
