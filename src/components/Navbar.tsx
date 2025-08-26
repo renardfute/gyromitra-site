@@ -12,9 +12,9 @@ export default function Navbar() {
           <Image
             src="/logo-cropped.png"
             alt="Gyromitra Inc."
-            width={720}
-            height={220}
-            className="h-24 w-auto object-contain"
+            width={504}
+            height={154}
+            className="h-16 w-auto object-contain"
             priority
             style={{ objectPosition: 'center' }}
           />
