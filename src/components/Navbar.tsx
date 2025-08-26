@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 
 export default function Navbar() {
@@ -7,8 +8,15 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 bg-white/90 backdrop-blur header-line">
       <div className="container flex items-center justify-between py-4">
-        <Link href="/" className="font-semibold tracking-tight text-slate-900">
-          Gyromitra Inc.
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/logo.png"
+            alt="Gyromitra Inc."
+            width={120}
+            height={40}
+            className="h-8 w-auto"
+            priority
+          />
         </Link>
         <nav className="hidden gap-8 text-sm text-slate-700 md:flex">
           <Link href="#services">Services</Link>
