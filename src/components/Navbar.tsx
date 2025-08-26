@@ -12,6 +12,7 @@ export default function Navbar() {
         </Link>
         <nav className="hidden gap-8 text-sm text-slate-700 md:flex">
           <Link href="#services">Services</Link>
+          <Link href="/training">Training</Link>
           <Link href="#why-us">Why Us</Link>
           <Link href="#cases">Case Highlights</Link>
           <Link href="#contact">Contact</Link>
@@ -28,6 +29,7 @@ export default function Navbar() {
         <div className="md:hidden border-t border-neutral-200 bg-white">
           <div className="container grid gap-3 py-4 text-slate-700">
             <a href="#services" onClick={() => setOpen(false)}>Services</a>
+            <Link href="/training" onClick={() => setOpen(false)}>Training</Link>
             <a href="#why-us" onClick={() => setOpen(false)}>Why Us</a>
             <a href="#cases" onClick={() => setOpen(false)}>Case Highlights</a>
             <a href="#contact" onClick={() => setOpen(false)}>Contact</a>
