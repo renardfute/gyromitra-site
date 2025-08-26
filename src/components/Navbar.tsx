@@ -7,14 +7,14 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
   return (
     <header className="sticky top-0 z-50 bg-white/90 backdrop-blur header-line">
-      <div className="container flex items-center justify-between py-3">
+      <div className="container flex items-center justify-between py-2">
         <Link href="/" className="flex items-center">
           <Image
             src="/logo-cropped.png"
             alt="Gyromitra Inc."
-            width={360}
-            height={180}
-            className="h-12 w-auto object-contain"
+            width={720}
+            height={220}
+            className="h-24 w-auto object-contain"
             priority
             style={{ objectPosition: 'center' }}
           />
