@@ -10,10 +10,10 @@ export default function Navbar() {
       <div className="container flex items-center justify-between py-3">
         <Link href="/" className="flex items-center">
           <Image
-            src="/logo.png"
+            src="/logo-cropped.png"
             alt="Gyromitra Inc."
             width={360}
-            height={120}
+            height={180}
             className="h-12 w-auto object-contain"
             priority
             style={{ objectPosition: 'center' }}
