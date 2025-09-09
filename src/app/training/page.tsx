@@ -174,32 +174,52 @@ export default function TrainingPage() {
               </div>
             </div>
 
-            {/* Coming Soon Courses */}
-            <div className="card opacity-75">
+            {/* Power BI Pro Skills - Maven Course */}
+            <div className="card">
               <div className="grid gap-6 lg:grid-cols-3 lg:items-center">
                 <div className="lg:col-span-2">
                   <div className="flex items-center gap-3 mb-3">
-                    <span className="px-3 py-1 bg-slate-100 text-slate-600 text-xs font-semibold rounded-full">
-                      Coming Soon
+                    <span className="px-3 py-1 bg-green-100 text-green-800 text-xs font-semibold rounded-full">
+                      Now Available
                     </span>
-                    <span className="text-sm text-slate-500">AZ-104</span>
+                    <span className="text-sm text-slate-500">Advanced</span>
                   </div>
-                  <h3 className="text-xl font-semibold mb-3">Microsoft Azure Administrator Associate</h3>
+                  <h3 className="text-xl font-semibold mb-3">Power BI Pro Skills: Advanced Analytics & Governance</h3>
                   <p className="text-slate-700 mb-4">
-                    Learn to manage Azure subscriptions, implement storage solutions, configure virtual networking, 
-                    and manage identities.
+                    Master advanced modeling, performance, governance, and Microsoft Fabric in this comprehensive
+                    4-week program. Perfect for data analysts, team leads, and BI managers seeking enterprise-grade skills.
                   </p>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <span className="px-2 py-1 bg-slate-100 text-slate-700 text-xs rounded">Advanced DAX</span>
+                    <span className="px-2 py-1 bg-slate-100 text-slate-700 text-xs rounded">Performance Tuning</span>
+                    <span className="px-2 py-1 bg-slate-100 text-slate-700 text-xs rounded">Row-Level Security</span>
+                    <span className="px-2 py-1 bg-slate-100 text-slate-700 text-xs rounded">Microsoft Fabric</span>
+                  </div>
                   <div className="text-sm text-slate-600">
-                    Azure fundamentals • Virtual machines • Networking • Identity management
+                    ✅ 10 live sessions with hands-on practice<br/>
+                    ✅ Real enterprise workflows & datasets<br/>
+                    ✅ Portfolio-ready capstone project<br/>
+                    ✅ Maven Guarantee & community support
                   </div>
                 </div>
                 <div className="text-center lg:text-right">
                   <div className="mb-4">
-                    <div className="text-lg font-semibold text-slate-600">Pricing TBD</div>
+                    <div className="text-2xl font-semibold text-slate-900">$500</div>
+                    <div className="text-sm text-slate-500">CAD + taxes</div>
                   </div>
-                  <button disabled className="btn btn-ghost opacity-50 cursor-not-allowed w-full lg:w-auto">
-                    Notify Me
-                  </button>
+                  <div className="space-y-3">
+                    <a
+                      href="https://maven.com/gyromitra/powerbi-pro-skills/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-primary w-full lg:w-auto"
+                    >
+                      Enroll Now
+                    </a>
+                    <div className="text-xs text-slate-500">
+                      Next cohort: Oct 15—Nov 10, 2025
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ContactForm from "@/components/ContactForm";
+import Link from "next/link";
 
 export default function Page() {
   return (
@@ -9,54 +10,127 @@ export default function Page() {
 
       {/* HERO */}
       <section className="section">
-        <div className="container grid items-center gap-10 lg:grid-cols-2">
-          <div className="space-y-6">
-            <p className="kicker">Management Consulting</p>
-            <h1 className="h1">
-              From Data to Decisions, <span className="text-slate-500">with Heart</span>.
-            </h1>
-            <p className="text-lg text-slate-700">
-              Gyromitra Inc. helps organizations modernize with clarity—combining strategy, research,
-              and hands-on advisory across data management, cybersecurity, technology innovation,
-              and project delivery. We turn best practices into practical roadmaps and measurable outcomes.
-            </p>
-            <div className="flex flex-wrap gap-3">
-              <a href="#contact" className="btn btn-primary">Book a discovery call</a>
-              <a href="#services" className="btn btn-ghost">Explore services</a>
-            </div>
-            <ul className="mt-6 grid grid-cols-2 gap-3 text-sm text-slate-500 sm:grid-cols-3">
-              <li>Public Sector</li>
-              <li>Healthcare</li>
-              <li>Financial Services</li>
-              <li>Technology</li>
-              <li>Utilities & Energy</li>
-              <li>Transportation</li>
-            </ul>
-          </div>
+        <div className="container text-center">
+          <p className="kicker">Management Consulting & Training</p>
+          <h1 className="h1">
+            From Data to Decisions, <span className="text-slate-500">with Heart</span>.
+          </h1>
+          <p className="text-lg text-slate-700 max-w-3xl mx-auto">
+            Gyromitra Inc. helps organizations modernize with clarity—combining strategy, research,
+            and hands-on advisory across data management, cybersecurity, technology innovation,
+            and project delivery. We turn best practices into practical roadmaps and measurable outcomes.
+          </p>
+        </div>
+      </section>
 
-          <div className="card">
-            <h3 className="mb-3 text-sm font-semibold text-slate-500 uppercase tracking-widest">
-              Offerings
-            </h3>
-            <ul className="grid gap-3 text-slate-900">
-              <li>• Strategic Advisory & Planning</li>
-              <li>• Data Management & Analytics</li>
-              <li>• Technology & Innovation Advisory</li>
-              <li>• Cybersecurity & Risk Management</li>
-              <li>• Project & Program Management</li>
-              <li>• Governance & Operating Models</li>
-            </ul>
-            <div className="mt-6 text-sm text-slate-500">
-              Primary: Canadian organizations (public & private). Secondary: international.
+      {/* MAIN SERVICE LINKS */}
+      <section className="section border-t border-neutral-200">
+        <div className="container">
+          <div className="grid gap-8 md:grid-cols-3">
+            {/* TRAINING SERVICES */}
+            <div className="card text-center group hover:shadow-lg transition-shadow">
+              <div className="mb-6">
+                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl">📚</span>
+                </div>
+                <h3 className="text-xl font-semibold mb-3">Training Services</h3>
+                <p className="text-slate-700 mb-4">
+                  Master advanced Power BI skills with expert-led training. Our comprehensive 4-week program
+                  covers data modeling, DAX functions, performance optimization, and enterprise governance.
+                  Led by Microsoft Certified Trainers with 20+ years of experience.
+                </p>
+                <div className="text-sm text-slate-600 mb-4">
+                  • Star schema modeling for messy data<br/>
+                  • Advanced DAX: CALCULATE, iterators, time intelligence<br/>
+                  • Performance tuning & storage modes<br/>
+                  • Row-level security & governance<br/>
+                  • Microsoft Fabric integration
+                </div>
+                <div className="mb-4">
+                  <span className="inline-block bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full font-medium">
+                    Next Cohort: Oct 15, 2025
+                  </span>
+                </div>
+              </div>
+              <Link href="/training" className="btn btn-primary w-full group-hover:bg-blue-700 transition-colors">
+                Explore Training
+              </Link>
+              <div className="mt-3">
+                <a
+                  href="https://maven.com/gyromitra/powerbi-pro-skills/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-blue-600 hover:text-blue-800 underline"
+                >
+                  View Maven Course Details →
+                </a>
+              </div>
+            </div>
+
+            {/* CONSULTING SERVICES */}
+            <div className="card text-center group hover:shadow-lg transition-shadow">
+              <div className="mb-6">
+                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl">💼</span>
+                </div>
+                <h3 className="text-xl font-semibold mb-3">Consulting Services</h3>
+                <p className="text-slate-700 mb-4">
+                  Transform your organization's data capabilities with our expert consulting services.
+                  From strategic planning to hands-on implementation, we deliver measurable outcomes
+                  across data management, analytics, and technology innovation.
+                </p>
+                <ul className="text-sm text-slate-600 text-left space-y-2 mb-4">
+                  <li>• Strategic Advisory & Planning</li>
+                  <li>• Data Management & Analytics</li>
+                  <li>• Technology & Innovation Advisory</li>
+                  <li>• Cybersecurity & Risk Management</li>
+                  <li>• Project & Program Management</li>
+                  <li>• Governance & Operating Models</li>
+                </ul>
+                <div className="text-sm text-slate-500">
+                  Serving Canadian organizations (primary) and international clients
+                </div>
+              </div>
+              <a href="#services" className="btn btn-primary w-full group-hover:bg-blue-700 transition-colors">
+                Explore Consulting
+              </a>
+            </div>
+
+            {/* CONTACT US */}
+            <div className="card text-center group hover:shadow-lg transition-shadow">
+              <div className="mb-6">
+                <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl">📞</span>
+                </div>
+                <h3 className="text-xl font-semibold mb-3">Contact Us</h3>
+                <p className="text-slate-700 mb-4">
+                  Ready to start your transformation journey? Book a discovery call to discuss your
+                  organization's goals and challenges. We'll help you identify the right path forward
+                  and create a customized roadmap for success.
+                </p>
+                <div className="text-sm text-slate-600 mb-4">
+                  • Free initial consultation<br/>
+                  • Customized solution recommendations<br/>
+                  • Flexible engagement models<br/>
+                  • Proven track record of success<br/>
+                  • End-to-end project support
+                </div>
+                <div className="text-sm text-slate-500">
+                  Available for Canadian and international clients
+                </div>
+              </div>
+              <a href="#contact" className="btn btn-primary w-full group-hover:bg-blue-700 transition-colors">
+                Get in Touch
+              </a>
             </div>
           </div>
         </div>
       </section>
 
-      {/* SERVICES */}
+      {/* CONSULTING SERVICES DETAILS */}
       <section id="services" className="section border-t border-neutral-200">
         <div className="container">
-          <h2 className="h2">Services</h2>
+          <h2 className="h2">Consulting Services</h2>
           <p className="mt-3 text-slate-700">Designed to move from insight to impact quickly.</p>
           <div className="mt-8 grid gap-6 md:grid-cols-2">
             <div className="card">
@@ -101,10 +175,10 @@ export default function Page() {
         </div>
       </section>
 
-      {/* WHY US */}
+      {/* WHY CHOOSE OUR CONSULTING */}
       <section id="why-us" className="section border-t border-neutral-200">
         <div className="container">
-          <h2 className="h2">Why work with us</h2>
+          <h2 className="h2">Why Choose Our Consulting</h2>
           <div className="mt-8 grid gap-6 md:grid-cols-3">
             <div className="card">
               <h4 className="font-semibold">Senior-only expertise</h4>
@@ -130,10 +204,10 @@ export default function Page() {
         </div>
       </section>
 
-      {/* CASES */}
+      {/* CONSULTING CASE HIGHLIGHTS */}
       <section id="cases" className="section border-t border-neutral-200">
         <div className="container">
-          <h2 className="h2">Case Highlights</h2>
+          <h2 className="h2">Consulting Case Highlights</h2>
           <div className="mt-8 grid gap-6 md:grid-cols-2">
             <div className="card">
               <h3 className="text-xl font-semibold">Data Governance Program Launch</h3>
