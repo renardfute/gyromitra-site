@@ -26,10 +26,10 @@ export default function Page() {
       {/* MAIN SERVICE LINKS */}
       <section className="section border-t border-neutral-200">
         <div className="container">
-          <div className="grid gap-8 md:grid-cols-3">
+          <div className="grid gap-8 md:grid-cols-3 items-stretch">
             {/* TRAINING SERVICES */}
-            <div className="card text-center group hover:shadow-lg transition-shadow">
-              <div className="mb-6">
+            <div className="card text-center group hover:shadow-lg transition-shadow flex flex-col h-full">
+              <div className="mb-6 flex-grow">
                 <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl">📚</span>
                 </div>
@@ -52,24 +52,26 @@ export default function Page() {
                   </span>
                 </div>
               </div>
-              <Link href="/training" className="btn btn-primary w-full group-hover:bg-blue-700 transition-colors">
-                Explore Training
-              </Link>
-              <div className="mt-3">
-                <a
-                  href="https://maven.com/gyromitra/powerbi-pro-skills/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm text-blue-600 hover:text-blue-800 underline"
-                >
-                  View Maven Course Details →
-                </a>
+              <div className="mt-auto">
+                <Link href="/training" className="btn btn-primary w-full group-hover:bg-blue-700 transition-colors">
+                  Explore Training
+                </Link>
+                <div className="mt-3">
+                  <a
+                    href="https://maven.com/gyromitra/powerbi-pro-skills/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-blue-600 hover:text-blue-800 underline"
+                  >
+                    View Maven Course Details →
+                  </a>
+                </div>
               </div>
             </div>
 
             {/* CONSULTING SERVICES */}
-            <div className="card text-center group hover:shadow-lg transition-shadow">
-              <div className="mb-6">
+            <div className="card text-center group hover:shadow-lg transition-shadow flex flex-col h-full">
+              <div className="mb-6 flex-grow">
                 <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl">💼</span>
                 </div>
@@ -90,15 +92,21 @@ export default function Page() {
                 <div className="text-sm text-slate-500">
                   Serving Canadian organizations (primary) and international clients
                 </div>
+                {/* Add some white space to balance content */}
+                <div className="mt-4">
+                  <div className="text-xs text-slate-400">Trusted by organizations across Canada</div>
+                </div>
               </div>
-              <a href="#services" className="btn btn-primary w-full group-hover:bg-blue-700 transition-colors">
-                Explore Consulting
-              </a>
+              <div className="mt-auto">
+                <a href="#services" className="btn btn-primary w-full group-hover:bg-blue-700 transition-colors">
+                  Explore Consulting
+                </a>
+              </div>
             </div>
 
             {/* CONTACT US */}
-            <div className="card text-center group hover:shadow-lg transition-shadow">
-              <div className="mb-6">
+            <div className="card text-center group hover:shadow-lg transition-shadow flex flex-col h-full">
+              <div className="mb-6 flex-grow">
                 <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl">📞</span>
                 </div>
@@ -118,10 +126,16 @@ export default function Page() {
                 <div className="text-sm text-slate-500">
                   Available for Canadian and international clients
                 </div>
+                {/* Add some white space to balance content */}
+                <div className="mt-4">
+                  <div className="text-xs text-slate-400">Response within 24 hours</div>
+                </div>
               </div>
-              <a href="#contact" className="btn btn-primary w-full group-hover:bg-blue-700 transition-colors">
-                Get in Touch
-              </a>
+              <div className="mt-auto">
+                <a href="#contact" className="btn btn-primary w-full group-hover:bg-blue-700 transition-colors">
+                  Get in Touch
+                </a>
+              </div>
             </div>
           </div>
         </div>
